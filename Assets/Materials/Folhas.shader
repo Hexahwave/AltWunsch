@@ -42,7 +42,8 @@ Shader "Custom/`Folhas"
             float3 pos = mul(unity_ObjectToWorld, v.vertex.xyz);
             
             //mudar alguns com cos etc
-            pos.y += 0.1*sin(_Time.y + pos.z);
+            pos.x += 0.04*sin(_Time.x + pos.z);
+            pos.x += 0.03 * cos(_Time.z + pos.x);
             v.vertex = mul(unity_WorldToObject, pos), 1.0;
         }
 
