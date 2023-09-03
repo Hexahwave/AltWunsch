@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:GroupBox style="height: 172px; width: 251px;">
+            <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Images/HUD/quest1.png?fileID=21300000&amp;guid=59a66cd6f860be64dab27b9172f521f4&amp;type=3#quest1&apos;); height: 170px; width: 328px; -unity-background-image-tint-color: rgb(255, 255, 255); opacity: 1; overflow: visible; visibility: visible; display: flex;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Images/HUD/quest1.1.png?fileID=21300000&amp;guid=8967960b831b8b743ad5ac42a64a4f5e&amp;type=3#quest1.1&apos;); height: 74px; width: 207px; position: absolute; top: 126px; left: 18px;" />
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Images/HUD/quest1.2.png?fileID=21300000&amp;guid=086ea1e89c783ad43becd3e65434fea3&amp;type=3#quest1.2&apos;); height: 76px; width: 196px; position: absolute; top: 179px; left: 20px;" />
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
