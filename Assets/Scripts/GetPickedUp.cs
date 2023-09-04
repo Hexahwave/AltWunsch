@@ -14,13 +14,11 @@ public class GetPickedUp : MonoBehaviour
             if (gameObject.CompareTag("Blue"))
             {
                 bFlowerCount++;
-                Debug.Log(bFlowerCount);
                 Destroy(gameObject);
             }
             else if (gameObject.CompareTag("Pink"))
             {
                 pFlowerCount++;
-                Debug.Log(pFlowerCount);
                 Destroy(gameObject);
             }
         }

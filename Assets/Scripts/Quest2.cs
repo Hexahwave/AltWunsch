@@ -24,6 +24,40 @@ public class Quest2 : MonoBehaviour
         pickPink = uIDocument.rootVisualElement.Q<ProgressBar>("PinkFlowers");
         pickBlue = uIDocument.rootVisualElement.Q<ProgressBar>("BlueFlowers");
         arrangeBouquet = uIDocument.rootVisualElement.Q<ProgressBar>("ArrangeBouquet");
+    }
+
+    public void Update()
+    {
+        
+        if (GetPickedUp.pFlowerCount > 8)
+        {
+            AddToQuest();
+        }
+
+        if (GetPickedUp.bFlowerCount > 1)
+        {
+            AddToQuest();
+        }
+    }
+
+    public virtual void AddToQuest()
+    {
+        Debug.Log("Bruh");
+        makeBouquet.value++;
+    }
+
+    public virtual void PickBFlower()
+    {
+        GetPickedUp.bFlowerCount++;
+    }
+
+    public virtual void PickPFlower() 
+    { 
+    
+    }
+
+    public virtual void ArrangeBouquet()
+    {
 
     }
 }
