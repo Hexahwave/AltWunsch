@@ -1,0 +1,83 @@
+.CreateBouquet {
+    width: 240px;
+    align-self: flex-start;
+    color: rgb(255, 255, 255);
+    -unity-text-align: upper-left;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+}
+
+.pinkFlowers .unity-progress-bar__background {
+    width: 121px;
+    align-self: flex-start;
+    -unity-background-image-tint-color: rgb(15, 255, 0);
+    background-color: rgba(255, 64, 180, 0.47);
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    -unity-text-align: middle-left;
+    border-left-color: rgba(103, 0, 62, 0.36);
+    border-right-color: rgba(103, 0, 62, 0.36);
+    border-top-color: rgba(103, 0, 62, 0.36);
+    border-bottom-color: rgba(103, 0, 62, 0.36);
+}
+
+.pinkFlowers .unity-progress-bar__progress {
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    background-color: rgba(103, 0, 62, 0.63);
+}
+
+.blueFlowers .unity-progress-bar__background {
+    width: 121px;
+    align-self: flex-start;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(64, 129, 255, 0.47);
+    border-left-color: rgba(0, 19, 99, 0.36);
+    border-right-color: rgba(0, 19, 99, 0.36);
+    border-top-color: rgba(0, 19, 99, 0.36);
+    border-bottom-color: rgba(0, 19, 99, 0.36);
+}
+
+.blueFlowers .unity-progress-bar__progress {
+    background-color: rgba(0, 52, 140, 0.63);
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-left: -1;
+    -unity-slice-top: -1;
+    -unity-slice-right: -1;
+    -unity-slice-bottom: -1;
+}
+
+.arrangeBouquet .unity-progress-bar__background {
+    width: 121px;
+    align-self: flex-start;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(141, 76, 255, 0.47);
+    border-left-color: rgba(28, 0, 75, 0.36);
+    border-right-color: rgba(28, 0, 75, 0.36);
+    border-top-color: rgba(28, 0, 75, 0.36);
+    border-bottom-color: rgba(28, 0, 75, 0.36);
+}
+
+.arrangeBouquet .unity-progress-bar__progress {
+    background-color: rgba(27, 0, 75, 0.63);
+    border-left-color: rgba(28, 0, 75, 0.36);
+    border-right-color: rgba(28, 0, 75, 0.36);
+    border-top-color: rgba(28, 0, 75, 0.36);
+    border-bottom-color: rgba(28, 0, 75, 0.36);
+    flex-shrink: 1;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+}

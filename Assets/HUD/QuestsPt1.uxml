@@ -1,10 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/HUD/CreateBouquet.uss?fileID=7433441132597879392&amp;guid=69e38c1866f51e24ea5489e6e6fdf2f4&amp;type=3#CreateBouquet" />
     <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-        <ui:GroupBox style="height: 172px; width: 251px;">
-            <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Images/HUD/quest1.png?fileID=21300000&amp;guid=59a66cd6f860be64dab27b9172f521f4&amp;type=3#quest1&apos;); height: 170px; width: 328px; -unity-background-image-tint-color: rgb(255, 255, 255); opacity: 1; overflow: visible; visibility: visible; display: flex;">
-                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Images/HUD/quest1.1.png?fileID=21300000&amp;guid=8967960b831b8b743ad5ac42a64a4f5e&amp;type=3#quest1.1&apos;); height: 74px; width: 207px; position: absolute; top: 126px; left: 18px;" />
-                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Images/HUD/quest1.2.png?fileID=21300000&amp;guid=086ea1e89c783ad43becd3e65434fea3&amp;type=3#quest1.2&apos;); height: 76px; width: 196px; position: absolute; top: 179px; left: 20px;" />
-            </ui:VisualElement>
-        </ui:GroupBox>
+        <ui:ProgressBar value="0" title="Create a bouquet for Eric" high-value="3" name="CreateBouquet" class="CreateBouquet" style="width: 186px;" />
+        <ui:ProgressBar value="5" title="Pick pink flowers" high-value="8" name="PinkFlowers" class="pinkFlowers" style="-unity-text-align: middle-center;" />
+        <ui:ProgressBar value="4" title="Pick blue flowers" high-value="8" name="BlueFlowers" class="blueFlowers" />
+        <ui:ProgressBar value="1" title="Arrange the bouquet" high-value="1" name="ArrangeBouquet" class="arrangeBouquet" style="height: 27px; width: 123px;" />
     </ui:VisualElement>
 </ui:UXML>

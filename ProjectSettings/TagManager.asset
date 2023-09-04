@@ -8,6 +8,9 @@ TagManager:
   - Foliage
   - Trunk
   - Bush
+  - Flower
+  - Pink
+  - Blue
   layers:
   - Default
   - TransparentFX
