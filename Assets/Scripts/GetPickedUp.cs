@@ -13,11 +13,13 @@ public class GetPickedUp : MonoBehaviour
         {
             if (gameObject.CompareTag("Blue"))
             {
+                Quest2.pickBlue.value++;
                 bFlowerCount++;
                 Destroy(gameObject);
             }
             else if (gameObject.CompareTag("Pink"))
             {
+                Quest2.pickPink.value++;
                 pFlowerCount++;
                 Destroy(gameObject);
             }

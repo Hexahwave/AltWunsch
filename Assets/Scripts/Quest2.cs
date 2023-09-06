@@ -9,14 +9,17 @@ public class Quest2 : MonoBehaviour
     public UIDocument uIDocument;
 
     public ProgressBar makeBouquet;
-    public ProgressBar pickPink;
-    public ProgressBar pickBlue;
+    public static ProgressBar pickPink;
+    public static ProgressBar pickBlue;
     public ProgressBar arrangeBouquet;
 
     public UnityEvent OnCompPt1;
     public UnityEvent OnCompPt2;
     public UnityEvent OnCompBoth;
     public UnityEvent OnCompAll;
+
+    public int onComp1test = 0;
+    public int onComp2test = 0;
 
     private void Start()
     {
@@ -29,20 +32,22 @@ public class Quest2 : MonoBehaviour
     public void Update()
     {
         
-        if (GetPickedUp.pFlowerCount > 8)
+        if (GetPickedUp.pFlowerCount == 2 && onComp1test == 0)
         {
             AddToQuest();
+            onComp1test = 1;
         }
 
-        if (GetPickedUp.bFlowerCount > 1)
+        if (GetPickedUp.bFlowerCount == 2 && onComp2test == 0)
         {
             AddToQuest();
+            onComp2test = 1;
         }
     }
 
     public virtual void AddToQuest()
     {
-        Debug.Log("Bruh");
+        Debug.Log(makeBouquet.value);
         makeBouquet.value++;
     }
 
