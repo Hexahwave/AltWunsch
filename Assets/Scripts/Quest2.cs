@@ -8,15 +8,10 @@ public class Quest2 : MonoBehaviour
 {
     public UIDocument uIDocument;
 
-    public ProgressBar makeBouquet;
+    public static ProgressBar makeBouquet;
     public static ProgressBar pickPink;
     public static ProgressBar pickBlue;
-    public ProgressBar arrangeBouquet;
-
-    public UnityEvent OnCompPt1;
-    public UnityEvent OnCompPt2;
-    public UnityEvent OnCompBoth;
-    public UnityEvent OnCompAll;
+    public static ProgressBar arrangeBouquet;
 
     public int onComp1test = 0;
     public int onComp2test = 0;
@@ -31,7 +26,6 @@ public class Quest2 : MonoBehaviour
 
     public void Update()
     {
-        
         if (GetPickedUp.pFlowerCount == 2 && onComp1test == 0)
         {
             AddToQuest();
@@ -49,20 +43,5 @@ public class Quest2 : MonoBehaviour
     {
         Debug.Log(makeBouquet.value);
         makeBouquet.value++;
-    }
-
-    public virtual void PickBFlower()
-    {
-        GetPickedUp.bFlowerCount++;
-    }
-
-    public virtual void PickPFlower() 
-    { 
-    
-    }
-
-    public virtual void ArrangeBouquet()
-    {
-
     }
 }

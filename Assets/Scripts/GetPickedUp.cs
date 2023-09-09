@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetPickedUp : MonoBehaviour
+public class Interaction : MonoBehaviour
 {
     public static int bFlowerCount = 0;
     public static int pFlowerCount = 0;
@@ -22,6 +22,10 @@ public class GetPickedUp : MonoBehaviour
                 Quest2.pickPink.value++;
                 pFlowerCount++;
                 Destroy(gameObject);
+            }
+            else if (gameObject.CompareTag("Craft") && Quest2.makeBouquet.value == 2)
+            {
+                Quest2.arrangeBouquet.value++;
             }
         }
     }

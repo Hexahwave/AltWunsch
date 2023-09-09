@@ -11,6 +11,7 @@ TagManager:
   - Flower
   - Pink
   - Blue
+  - Craft
   layers:
   - Default
   - TransparentFX
