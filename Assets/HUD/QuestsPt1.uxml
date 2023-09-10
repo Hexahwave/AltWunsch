@@ -1,9 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/HUD/CreateBouquet.uss?fileID=7433441132597879392&amp;guid=69e38c1866f51e24ea5489e6e6fdf2f4&amp;type=3#CreateBouquet" />
     <ui:VisualElement name="BouquetQuest" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-        <ui:ProgressBar value="0" title="Create a bouquet for Eric" high-value="3" name="CreateBouquet" class="CreateBouquet" style="width: 186px;" />
-        <ui:ProgressBar value="0" title="Pick pink flowers" high-value="2" name="PinkFlowers" class="pinkFlowers" style="-unity-text-align: middle-center;" />
-        <ui:ProgressBar value="0" title="Pick blue flowers" high-value="2" name="BlueFlowers" class="blueFlowers" />
-        <ui:ProgressBar value="0" title="Arrange the bouquet" high-value="1" name="ArrangeBouquet" class="arrangeBouquet" style="height: 27px; width: 123px;" />
+        <ui:ProgressBar value="0" title="Create a bouquet for Eric" high-value="3" name="CreateBouquet" class="CreateBouquet" style="width: 238px; background-color: rgba(255, 0, 0, 0.47);" />
+        <ui:ProgressBar value="0" title="Pick pink flowers" high-value="2" name="PinkFlowers" class="pinkFlowers" style="-unity-text-align: middle-center; overflow: visible; background-color: rgba(255, 105, 224, 0.45); width: 121px;" />
+        <ui:ProgressBar value="0" title="Pick blue flowers" high-value="2" name="BlueFlowers" class="blueFlowers" style="background-color: rgba(12, 0, 255, 0.47); width: 121px;" />
+        <ui:ProgressBar value="0" title="Arrange the bouquet" high-value="1" name="ArrangeBouquet" class="arrangeBouquet" style="height: 24px; width: 121px; background-color: rgba(163, 0, 255, 0.47);" />
     </ui:VisualElement>
 </ui:UXML>
