@@ -2,24 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 public class Interaction : MonoBehaviour
 {
+
     public static int bFlowerCount = 0;
     public static int pFlowerCount = 0;
+
 
     public GameObject flowerBouquet;
 
     public bool isTouching = false;
+    public UnityEvent OnFinish;
+
+
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.E) && isTouching == true)
         {
             if (Quest2.makeBouquet.value == 3 && flowerBouquet.activeSelf)
             {
                 Debug.Log("DESTRUA");
                 Destroy(flowerBouquet);
+                OnFinish.Invoke();
             }
             else if (gameObject.CompareTag("Blue"))
             {

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/HUD/CreateBouquet.uss?fileID=7433441132597879392&amp;guid=69e38c1866f51e24ea5489e6e6fdf2f4&amp;type=3#CreateBouquet" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 209, 158);">
+        <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" style="align-items: center; align-self: center; justify-content: flex-start; transform-origin: bottom; top: 193px; -unity-text-align: middle-center; background-color: rgb(135, 40, 92); color: rgb(255, 255, 255);" />
+        <ui:Label tabindex="-1" text="Find the flowers and interact with the table to create a bouquet for Eric!" display-tooltip-when-elided="true" style="background-color: rgba(192, 48, 130, 0); color: rgb(91, 0, 71); height: 26px; top: 200px; align-items: center; align-self: center;" />
+        <ui:Label tabindex="-1" text="Press E to interact with items&#10;WASD to move and mouse to look around" display-tooltip-when-elided="true" style="background-color: rgba(192, 48, 130, 0); color: rgb(91, 0, 71); height: 26px; top: 200px; align-items: center; align-self: center; -unity-text-align: upper-center;" />
+    </ui:VisualElement>
+</ui:UXML>
