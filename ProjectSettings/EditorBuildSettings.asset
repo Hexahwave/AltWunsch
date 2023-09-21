@@ -12,6 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Forest.unity
     guid: a6e4dbfbb84b57d4e8ca5f6efbcb2ac8
   - enabled: 1
-    path: Assets/Scenes/Yoyo.unity
+    path: Assets/Scenes/Test/Yoyo.unity
     guid: 6e54c4f14a94b684badf0c16ea14afa5
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
