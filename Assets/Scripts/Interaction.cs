@@ -20,7 +20,6 @@ public class Interaction : MonoBehaviour
 
     private void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.E) && isTouching == true)
         {
             if (Quest2.makeBouquet.value == 3 && flowerBouquet.activeSelf)
