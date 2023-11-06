@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 1229251550894774449}
   - component: {fileID: 2962328596810843715}
   - component: {fileID: 66779522623247587}
-  - component: {fileID: 5611861686003830897}
-  - component: {fileID: -724915114536774404}
+  - component: {fileID: 5982130382246761449}
   m_Layer: 0
   m_Name: Bushes
   m_TagString: Untagged
@@ -28,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5207817132936191101}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071067}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -86,35 +85,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!205 &5611861686003830897
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5207817132936191101}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.042184472, y: 0.57314545, z: -0.13940072}
-  m_Size: 188.11
-  m_FadeMode: 1
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.4542184
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 66779522623247587}
-  - screenRelativeHeight: 0.2271092
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 66779522623247587}
-  - screenRelativeHeight: 0.07570306
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 66779522623247587}
-  m_Enabled: 1
---- !u!64 &-724915114536774404
-MeshCollider:
+--- !u!65 &5982130382246761449
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -131,7 +103,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -153830957423991239, guid: f398a0d4b8d5d604fb28cf74b8af1782, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 1.3209505, y: 1.2207178, z: 1.122036}
+  m_Center: {x: 0.042184472, y: 0.57314557, z: -0.13940072}
