@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 83d5518b36c7f434b91c39bf0833cbc2
   - enabled: 1
-    path: Assets/Scenes/Forest.unity
+    path: Assets/AssetIndividualHexahBeims/Cenas/Forest Day.unity
     guid: a6e4dbfbb84b57d4e8ca5f6efbcb2ac8
   - enabled: 0
     path: Assets/Scenes/Test/Yoyo.unity
