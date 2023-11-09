@@ -45,7 +45,8 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Parallax: 0.005
+    - _Smoothness: 0.28
     m_Colors:
-    - _BaseColor: {r: 0.3254902, g: 0.90588236, b: 0.56078434, a: 1}
-    - _Color: {r: 0.32549015, g: 0.90588236, b: 0.5607843, a: 1}
+    - _BaseColor: {r: 0.53555536, g: 0.62629193, b: 0.7830189, a: 1}
+    - _Color: {r: 0.5355553, g: 0.62629193, b: 0.7830188, a: 1}
   m_BuildTextureStacks: []
