@@ -14,12 +14,30 @@ public class Interaction : MonoBehaviour
     public GameObject flowerBouquet;
 
     public bool isTouching = false;
+
     public UnityEvent OnFinish;
 
+    public UnityEvent Appear;
 
+    public UnityEvent Disappear;
 
     private void Update()
     {
+        if (isTouching == true)
+        {
+            if (gameObject.CompareTag("ChangeScene"))
+            {
+                Appear.Invoke();
+            }
+            else if (gameObject.CompareTag("Blue"))
+            {
+                Appear.Invoke();
+            }
+            else if (gameObject.CompareTag("Pink"))
+            {
+                Appear.Invoke();
+            }
+        }
         if (Input.GetKeyDown(KeyCode.E) && isTouching == true)
         {
             if (Quest2.makeBouquet.value == 3 && flowerBouquet.activeSelf)
@@ -32,19 +50,26 @@ public class Interaction : MonoBehaviour
             {
                 Quest2.pickBlue.value++;
                 bFlowerCount++;
+                Disappear.Invoke();
                 Destroy(gameObject);
             }
             else if (gameObject.CompareTag("Pink"))
             {
                 Quest2.pickPink.value++;
-                pFlowerCount++;
+                pFlowerCount++;    
+                Disappear.Invoke();
                 Destroy(gameObject);
+                
             }
             else if (gameObject.CompareTag("Craft") && Quest2.makeBouquet.value == 2)
             {
                 Quest2.makeBouquet.value++;
                 Quest2.arrangeBouquet.value++;
                 flowerBouquet.SetActive(true);
+            }
+            else if (gameObject.CompareTag("ChangeScene"))
+            {
+                OnFinish.Invoke();
             }
         }
     }
@@ -56,5 +81,6 @@ public class Interaction : MonoBehaviour
     public void OnTriggerExit(Collider other)
     {
          isTouching = false;
+        Disappear.Invoke();
     }
 }

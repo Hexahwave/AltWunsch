@@ -12,6 +12,7 @@ TagManager:
   - Pink
   - Blue
   - Craft
+  - ChangeScene
   layers:
   - Default
   - TransparentFX

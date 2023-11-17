@@ -26,13 +26,13 @@ public class Quest2 : MonoBehaviour
 
     public void Update()
     {
-        if (Interaction.pFlowerCount == 2 && onComp1test == 0)
+        if (Interaction.pFlowerCount == 8 && onComp1test == 0)
         {
             AddToQuest();
             onComp1test = 1;
         }
 
-        if (Interaction.bFlowerCount == 2 && onComp2test == 0)
+        if (Interaction.bFlowerCount == 8 && onComp2test == 0)
         {
             AddToQuest();
             onComp2test = 1;
