@@ -20,13 +20,22 @@ public class Interaction : MonoBehaviour
     public UnityEvent Appear;
 
     public UnityEvent Disappear;
+    public UnityEvent Load;
 
+    IEnumerator waiter()
+    {
+        Load.Invoke();
+        yield return new WaitForSeconds(5);
+        OnFinish.Invoke();
+
+    }
     private void Update()
     {
         if (isTouching == true)
         {
             if (gameObject.CompareTag("ChangeScene"))
             {
+
                 Appear.Invoke();
             }
             else if (gameObject.CompareTag("Blue"))
@@ -69,7 +78,7 @@ public class Interaction : MonoBehaviour
             }
             else if (gameObject.CompareTag("ChangeScene"))
             {
-                OnFinish.Invoke();
+                StartCoroutine(waiter());
             }
         }
     }
